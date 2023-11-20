@@ -1,10 +1,32 @@
+"use client";
+
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 function HeroSection() {
   return (
     <section>
       <div className="grid grid-cols-1 md:gap-0 md:grid-cols-12">
         <div className="col-span-7 text-center md:text-left">
+          <TypeAnimation
+            sequence={[
+              // Same substring at the start will only be typed out once, initially
+              "Hello, my name is",
+              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              "Hola, me llamo",
+              1000,
+              "Bonjour, je m'appelle",
+              1000,
+              "こんにちは、私の名前は",
+              1000,
+              "Thanks for stopping by",
+              1000,
+            ]}
+            wrapper="span"
+            speed={5}
+            style={{ fontSize: "2em", display: "inline-block" }}
+            repeat={0}
+          />
           <h1 className=" text-4xl sm:text-5xl lg:text-6xl text-zinc-900 font-extrabold">
             Kevin Jarvis
           </h1>
