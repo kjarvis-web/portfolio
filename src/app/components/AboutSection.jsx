@@ -49,7 +49,7 @@ function AboutSection() {
     <section className="md:mt-4">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
-          className="rounded my-4"
+          className="rounded md:my-4"
           src="/images/computer.jpg"
           width={500}
           height={500}
@@ -59,9 +59,9 @@ function AboutSection() {
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-base md:text-lg">
             I am a front-end web developer with experince in Javascript, React,
-            Redux, Node.js, HTML, CSS, and Git. I am a fast learner and looking
-            to expand my knowledge and skill set. I am excited at the prospect
-            of working with others to create amazing applications.
+            Redux, Node.js, HTML, CSS, and Git. I am a fast learner looking to
+            expand my knowledge and skill set. I am excited at the prospect of
+            working with others to create amazing applications.
           </p>
           <div className="flex flex-row mt-8">
             <TabButton

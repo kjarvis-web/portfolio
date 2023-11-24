@@ -15,11 +15,13 @@ function HeroSection() {
               1000, // wait 1s before replacing "Mice" with "Hamsters"
               "Hola, me llamo",
               1000,
+              "안녕 내 이름은",
+              1000,
               "Bonjour, je m'appelle",
               1000,
               "こんにちは、私の名前は",
               1000,
-              "Thanks for stopping by",
+              "Thanks for checking out my portfolio!",
               1000,
             ]}
             wrapper="span"
