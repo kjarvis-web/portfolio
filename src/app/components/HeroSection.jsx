@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <section>
+    <section id="/">
       <div className="grid grid-cols-1 md:gap-0 md:grid-cols-12">
         <div className="col-span-7 text-center md:text-left">
           <h1 className=" text-4xl sm:text-5xl lg:text-6xl text-zinc-900 font-extrabold">
