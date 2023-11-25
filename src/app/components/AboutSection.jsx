@@ -1,21 +1,31 @@
 "use client";
 
 import { startTransition, useState } from "react";
-
 import Image from "next/image";
 import TabButton from "./TabButton";
+import ReactIcon from "../../../public/images/react.svg";
+import JavascriptIcon from "../../../public/images/javascript.svg";
+import HtmlIcon from "../../../public/images/html-5.svg";
+import CssIcon from "../../../public/images/css-3.svg";
+import GitIcon from "../../../public/images/git-icon.svg";
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul>
-        <li>React</li>
-        <li>Javascript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git</li>
+      <ul className="flex gap-8">
+        <li className="flex">
+          <Image src={ReactIcon} alt="react icon" height={50} />
+          <Image src={JavascriptIcon} alt="javascript icon" height={50} />
+        </li>
+        <li className="flex">
+          <Image src={HtmlIcon} alt="html icon" height={50} />
+          <Image src={CssIcon} alt="css icon" height={50} />
+        </li>
+        <li className="flex">
+          <Image src={GitIcon} alt="git icon" height={50} />
+        </li>
       </ul>
     ),
   },

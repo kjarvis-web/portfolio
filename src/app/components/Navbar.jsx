@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon, ArrowUpIcon } from "@heroicons/react/24/solid";
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
 
@@ -17,9 +17,10 @@ function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-zinc-900 text-zinc-100">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href={"/"} className="text-2xl md:text-5xl text-zinc-100">
-          Logo
+        <Link href={"/"} className="text-2xl">
+          <ArrowUpIcon className="h-10 w-10" />
         </Link>
+
         <div className="mobile-menu block md:hidden">
           {navbarOpen ? (
             <button className="text-slate-200 flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white">

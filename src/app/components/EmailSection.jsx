@@ -1,3 +1,7 @@
+import Image from "next/image";
+import GithubIcon from "../../../public/images/github-icon.svg";
+import Linkedin from "../../../public/images/linkedin.svg";
+
 function EmailSection() {
   return (
     <section id="contact" className="grid md:grid-cols-2 my-12 py-24 gap-4">
@@ -9,6 +13,10 @@ function EmailSection() {
           cumque earum error incidunt consequatur vitae! Iusto at alias sit
           dicta libero.
         </p>
+        <div className="socials flex flex-row gap-6">
+          <Image src={GithubIcon} alt="github icon" height={35} />
+          <Image src={Linkedin} alt="linkedin icon" height={35} />
+        </div>
       </div>
       <div>
         <form className="flex flex-col">
@@ -39,14 +47,11 @@ function EmailSection() {
           ></textarea>
           <button
             type="submit"
-            className="bg-purple-500 hover:bg-purple-600 font-medium w-full rounded p-3"
+            className="text-white bg-violet-800 hover:bg-violet-900 font-medium w-full rounded p-3"
           >
             Submit
           </button>
         </form>
-      </div>
-      <div className="socials flex flex-row gap-2">
-        Link github and linkedin
       </div>
     </section>
   );

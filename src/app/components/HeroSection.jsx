@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 function HeroSection() {
   return (
@@ -18,9 +19,12 @@ function HeroSection() {
             deleniti.
           </p>
           <div>
-            <button className="px-6 py-3 sm:w-fit w-full rounded-full mr-4 bg-white hover:bg-zinc-200 border border-zinc-900">
+            <Link
+              href="#contact"
+              className="inline-block px-6 py-3 sm:w-fit w-full rounded-full mr-4 bg-white hover:bg-zinc-200 border border-zinc-900"
+            >
               Hire Me
-            </button>
+            </Link>
             <button className="px-6 py-3 sm:w-fit w-full rounded-full bg-zinc-900 hover:text-black hover:bg-zinc-200 text-zinc-100 mt-3">
               Download CV
             </button>
