@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import GithubIcon from "../../../public/images/github-icon.svg";
 import Linkedin from "../../../public/images/linkedin.svg";
 
@@ -14,7 +15,14 @@ function EmailSection() {
           dicta libero.
         </p>
         <div className="socials flex flex-row gap-6">
-          <Image src={GithubIcon} alt="github icon" height={35} />
+          <a
+            href="https://github.com/norristown"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src={GithubIcon} alt="github icon" height={35} />
+          </a>
+
           <Image src={Linkedin} alt="linkedin icon" height={35} />
         </div>
       </div>
