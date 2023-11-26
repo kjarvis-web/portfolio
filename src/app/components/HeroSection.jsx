@@ -13,10 +13,8 @@ function HeroSection() {
           </h1>
           <h2 className="text-xl lg:text-3xl mb-4 ">Front-End Developer</h2>
           <p className="text-base lg:text-lg mb-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea in
-            similique quasi necessitatibus error nisi quo iure quas quos, ipsum
-            libero iste commodi totam, non tempore, aliquid quis beatae
-            deleniti.
+            I am a self-taught developer from the Philadelphia area with a
+            passion for design and the arts.
           </p>
           <div>
             <Link

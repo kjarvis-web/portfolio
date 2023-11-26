@@ -14,17 +14,32 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="flex gap-8">
-        <li className="flex">
-          <Image src={ReactIcon} alt="react icon" height={50} />
-          <Image src={JavascriptIcon} alt="javascript icon" height={50} />
+      <ul className="flex gap-8 md:gap-10 text-sm font-semibold">
+        <li className="flex gap-4">
+          <div className="flex flex-col items-center">
+            <span>React</span>
+            <Image src={ReactIcon} alt="react icon" height={50} />
+          </div>
+          <div className="flex flex-col items-center">
+            <span>JavaScript</span>
+            <Image src={JavascriptIcon} alt="javascript icon" height={50} />
+          </div>
         </li>
-        <li className="flex">
-          <Image src={HtmlIcon} alt="html icon" height={50} />
-          <Image src={CssIcon} alt="css icon" height={50} />
+        <li className="flex gap-4">
+          <div className="flex flex-col items-center">
+            <span>HTML</span>
+            <Image src={HtmlIcon} alt="html icon" height={50} />
+          </div>
+          <div className="flex flex-col items-center">
+            <span>CSS</span>
+            <Image src={CssIcon} alt="css icon" height={50} />
+          </div>
         </li>
-        <li className="flex">
-          <Image src={GitIcon} alt="git icon" height={50} />
+        <li className="flex gap-4">
+          <div className="flex flex-col items-center">
+            <span>Git</span>
+            <Image src={GitIcon} alt="git icon" height={50} />
+          </div>
         </li>
       </ul>
     ),
@@ -79,18 +94,6 @@ function AboutSection() {
               active={tab === "skills"}
             >
               Skills
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              Education
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("experience")}
-              active={tab === "experience"}
-            >
-              Experience
             </TabButton>
           </div>
           <div className="mt-8">
