@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 function HeroSection() {
+  const test = process.env.NEXT_PUBLIC_KEY;
+  console.log(test);
   return (
     <section id="/">
       <div className="grid grid-cols-1 md:gap-0 md:grid-cols-12">

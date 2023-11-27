@@ -8,6 +8,7 @@ import JavascriptIcon from "../../../public/images/javascript.svg";
 import HtmlIcon from "../../../public/images/html-5.svg";
 import CssIcon from "../../../public/images/css-3.svg";
 import GitIcon from "../../../public/images/git-icon.svg";
+import NextjsIcon from "../../../public/images/nextjs.svg";
 
 const TAB_DATA = [
   {
@@ -16,29 +17,28 @@ const TAB_DATA = [
     content: (
       <ul className="flex gap-8 md:gap-10 text-sm font-semibold">
         <li className="flex gap-4">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center gap-2">
+            <Image src={NextjsIcon} alt="nextjs icon" height={50} />
+            <span>Next.js</span>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Image src={ReactIcon} alt="react icon" height={50} />{" "}
             <span>React</span>
-            <Image src={ReactIcon} alt="react icon" height={50} />
           </div>
-          <div className="flex flex-col items-center">
-            <span>JavaScript</span>
+          <div className="flex flex-col items-center gap-2">
             <Image src={JavascriptIcon} alt="javascript icon" height={50} />
+            <span>JavaScript</span>
           </div>
-        </li>
-        <li className="flex gap-4">
-          <div className="flex flex-col items-center">
-            <span>HTML</span>
+          <div className="flex flex-col items-center gap-2">
             <Image src={HtmlIcon} alt="html icon" height={50} />
+            <span>HTML</span>
           </div>
-          <div className="flex flex-col items-center">
-            <span>CSS</span>
-            <Image src={CssIcon} alt="css icon" height={50} />
+          <div className="flex flex-col items-center gap-2">
+            <Image src={CssIcon} alt="css icon" height={50} /> <span>CSS</span>
           </div>
-        </li>
-        <li className="flex gap-4">
-          <div className="flex flex-col items-center">
-            <span>Git</span>
+          <div className="flex flex-col items-center gap-2">
             <Image src={GitIcon} alt="git icon" height={50} />
+            <span>Git</span>
           </div>
         </li>
       </ul>

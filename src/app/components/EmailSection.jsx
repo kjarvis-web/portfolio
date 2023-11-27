@@ -1,18 +1,37 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import GithubIcon from "../../../public/images/github-icon.svg";
 import Linkedin from "../../../public/images/linkedin.svg";
 
 function EmailSection() {
+  const form = useRef();
+  const service = process.env.NEXT_PUBLIC_SERVICE;
+  const template = process.env.NEXT_PUBLIC_TEMPLATE;
+  const key = process.env.NEXT_PUBLIC_KEY;
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(service, template, form.current, key).then(
+      (result) => {
+        console.log(result.text);
+        console.log("success");
+        e.target.reset();
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
   return (
     <section id="contact" className="grid md:grid-cols-2 my-12 py-24 gap-4">
       <div>
         <h5 className="text-3xl font-bold my-2">Contact Me</h5>
         <p className="mb-4 max-w-md">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          accusantium ad rerum. Ab eveniet voluptatem aperiam sit? Delectus
-          cumque earum error incidunt consequatur vitae! Iusto at alias sit
-          dicta libero.
+          If you liked any of my work here (or if you didn&apos;t), please
+          contact me. I look forward to hearing from you!
         </p>
         <div className="socials flex flex-row gap-6">
           <a
@@ -27,10 +46,11 @@ function EmailSection() {
         </div>
       </div>
       <div>
-        <form className="flex flex-col">
+        <form className="flex flex-col" onSubmit={sendEmail} ref={form}>
           <label htmlFor="email">Your Email</label>
           <input
             className="border border-zinc-900 text-sm rounded lg block w-full p-2 mb-4"
+            name="email"
             type="email"
             id="email"
             required
@@ -40,6 +60,7 @@ function EmailSection() {
           <input
             className="border border-zinc-900 text-sm rounded lg block w-full p-2 mb-4"
             type="text"
+            name="subject"
             id="subject"
             required
             placeholder="Hello"
