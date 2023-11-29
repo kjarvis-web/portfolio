@@ -88,6 +88,14 @@ function AboutSection() {
             expand my knowledge and skill set. I am excited at the prospect of
             working with others to create amazing applications.
           </p>
+          <br />
+          <p className="text-base md:text-lg">
+            Working as dance instructor for the past ten years has given me the
+            opportunity to work with many different clients of all different
+            backgrounds and goals, which has helped me improve my communication
+            skills and develop an awareness and sensitivity to a client&apos;s
+            goals and desires.
+          </p>
           <div className="flex flex-row mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
