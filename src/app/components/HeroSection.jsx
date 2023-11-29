@@ -4,8 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 function HeroSection() {
-  const test = process.env.NEXT_PUBLIC_KEY;
-  console.log(test);
   return (
     <section id="/">
       <div className="grid grid-cols-1 md:gap-0 md:grid-cols-12">
@@ -16,7 +14,8 @@ function HeroSection() {
           <h2 className="text-xl lg:text-3xl mb-4 ">Front-End Developer</h2>
           <p className="text-base lg:text-lg mb-6">
             I am a self-taught developer from the Philadelphia area with a
-            passion for design and the arts.
+            passion for design and the arts. Currently teaching ballroom and
+            latin dancing in Abington, PA at Socialsport Dance Club.
           </p>
           <div>
             <Link
