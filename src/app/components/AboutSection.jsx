@@ -17,26 +17,26 @@ const TAB_DATA = [
     content: (
       <ul className="flex gap-8 md:gap-10 text-sm font-semibold justify-center">
         <li className="md:flex md:flex-wrap md:gap-4 md:justify-between grid grid-cols-3 gap-4">
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Image src={NextjsIcon} alt="nextjs icon" height={50} />
             <span>Next.js</span>
           </div>
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Image src={ReactIcon} alt="react icon" height={50} />{" "}
             <span>React</span>
           </div>
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Image src={JavascriptIcon} alt="javascript icon" height={50} />
             <span>JavaScript</span>
           </div>
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Image src={HtmlIcon} alt="html icon" height={50} />
             <span>HTML</span>
           </div>
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Image src={CssIcon} alt="css icon" height={50} /> <span>CSS</span>
           </div>
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Image src={GitIcon} alt="git icon" height={50} />
             <span>Git</span>
           </div>
