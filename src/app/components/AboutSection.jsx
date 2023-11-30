@@ -15,8 +15,8 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="flex gap-8 md:gap-10 text-sm font-semibold">
-        <li className="flex gap-4">
+      <ul className="flex gap-8 md:gap-10 text-sm font-semibold justify-center">
+        <li className="md:flex md:flex-wrap md:gap-4 md:justify-between grid grid-cols-3 gap-4">
           <div className="flex flex-col items-center gap-2">
             <Image src={NextjsIcon} alt="nextjs icon" height={50} />
             <span>Next.js</span>
@@ -96,7 +96,7 @@ function AboutSection() {
             skills and develop an awareness and sensitivity to a client&apos;s
             goals and desires.
           </p>
-          <div className="flex flex-row mt-8">
+          <div className="flex flex-row mt-8 justify-center">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
