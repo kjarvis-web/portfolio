@@ -20,7 +20,6 @@ function Navbar() {
         <Link href={"/"} className="text-2xl">
           <ArrowUpIcon className="h-10 w-10" />
         </Link>
-
         <div className="mobile-menu block md:hidden">
           {navbarOpen ? (
             <button className="text-slate-200 flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white">

@@ -29,13 +29,13 @@ function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="border-4 border-zinc-900 rounded-full col-span-5 place-self-center relative w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] mt-4 lg:mt-0">
+        <div className="col-span-5 place-self-center relative w-[350px] h-[350px] lg:w-[300px] lg:h-[300px] mt-4 lg:mt-0">
           <Image
-            src="/images/spidey.png"
+            src="/images/me_rectangle.jpg"
             alt="hero image"
-            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 p-2"
-            width={300}
-            height={300}
+            className="border-black border-2 rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            width={250}
+            height={250}
           />
         </div>
       </div>
