@@ -84,9 +84,9 @@ function AboutSection() {
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-base md:text-lg">
             I am a front-end web developer with experince in Javascript, React,
-            Redux, Node.js, HTML, CSS, and Git. I am a fast learner looking to
-            expand my knowledge and skill set. I am excited at the prospect of
-            working with others to create amazing applications.
+            Node.js, HTML, CSS, and Git. I am a fast learner looking to expand
+            my knowledge and skill set. I am excited at the prospect of working
+            with others to create amazing applications.
           </p>
           <br />
           <p className="text-base md:text-lg">

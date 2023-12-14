@@ -5,7 +5,7 @@ const projectsData = [
     id: 1,
     title: "NextShopAPI",
     description:
-      "A mock online store that fetches data from fakeapistore.com. Nextjs is used to bundle the project, tailwindCSS to style, and useContext to manage state.",
+      "A mock online store that fetches data from fakeapistore.com. Nextjs was used to bundle the project, tailwindCSS to style, and useContext to manage state.",
     image: "/images/nextshop.jpg",
     gitUrl: "https://github.com/norristown/nextshop",
     previewUrl: "https://nextshop-theta.vercel.app/",
