@@ -67,9 +67,9 @@ const TAB_DATA = [
 function AboutSection() {
   const [tab, setTab] = useState("skills");
 
-  function handleTabChange(id) {
-    startTransition(() => setTab(id));
-  }
+  // function handleTabChange(id) {
+  //   startTransition(() => setTab(id));
+  // }
   return (
     <section id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
@@ -90,15 +90,14 @@ function AboutSection() {
           </p>
           <br />
           <p className="text-base md:text-lg">
-            Working as dance instructor for the past ten years has given me the
-            opportunity to work with many different clients of all different
-            backgrounds and goals, which has helped me improve my communication
-            skills and develop an awareness and sensitivity to a client&apos;s
-            goals and desires.
+            Working as a dance instructor for the past ten years has given me
+            the opportunity to work with many clients of all different
+            backgrounds and goals which has helped me improve my communication
+            skills.
           </p>
           <div className="flex flex-row mt-8 justify-center">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
+              // selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
               Skills

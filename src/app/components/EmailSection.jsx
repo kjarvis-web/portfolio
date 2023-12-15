@@ -27,7 +27,7 @@ function EmailSection() {
     );
   };
   return (
-    <section id="contact" className="grid md:grid-cols-2 my-12 py-24 gap-4">
+    <section id="contact" className="grid md:grid-cols-2 my-12 gap-4">
       <div>
         <h5 className="text-3xl font-bold my-2">Contact Me</h5>
         <p className="mb-4 max-w-md">
