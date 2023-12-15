@@ -93,7 +93,7 @@ function AboutSection() {
             Working as a dance instructor for the past ten years has given me
             the opportunity to work with many clients of all different
             backgrounds and goals which has helped me improve my communication
-            skills.
+            and interpersonal skills.
           </p>
           <div className="flex flex-row mt-8 justify-center">
             <TabButton
