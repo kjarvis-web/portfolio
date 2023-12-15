@@ -33,7 +33,7 @@ function HeroSection() {
           <Image
             src="/images/me_rectangle.jpg"
             alt="hero image"
-            className="border-black border-2 rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 animate-wiggle"
+            className="border-black border-2 absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 animate-wiggle"
             width={250}
             height={250}
           />

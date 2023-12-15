@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        wiggle: "wiggle 60s ease-in-out infinite",
+        wiggle: "wiggle 45s ease-in-out infinite",
       },
       keyframes: {
         wiggle: {
