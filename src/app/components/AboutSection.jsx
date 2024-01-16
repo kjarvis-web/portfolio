@@ -1,19 +1,21 @@
-"use client";
+'use client'
 
-import { startTransition, useState } from "react";
-import Image from "next/image";
-import TabButton from "./TabButton";
-import ReactIcon from "../../../public/images/react.svg";
-import JavascriptIcon from "../../../public/images/javascript.svg";
-import HtmlIcon from "../../../public/images/html-5.svg";
-import CssIcon from "../../../public/images/css-3.svg";
-import GitIcon from "../../../public/images/git-icon.svg";
-import NextjsIcon from "../../../public/images/nextjs.svg";
+import { startTransition, useState } from 'react'
+import Image from 'next/image'
+import TabButton from './TabButton'
+import ReactIcon from '../../../public/images/react.svg'
+import JavascriptIcon from '../../../public/images/javascript.svg'
+import HtmlIcon from '../../../public/images/html-5.svg'
+import CssIcon from '../../../public/images/css-3.svg'
+import GitIcon from '../../../public/images/git-icon.svg'
+import NextjsIcon from '../../../public/images/nextjs.svg'
+import JestIcon from '../../../public/images/jest.svg'
+import NodejsIcon from '../../../public/images/nodejs.svg'
 
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
+    title: 'Skills',
+    id: 'skills',
     content: (
       <ul className="flex gap-8 md:gap-10 text-sm font-semibold justify-center">
         <li className="md:flex md:flex-wrap md:gap-4 md:justify-between grid grid-cols-3 gap-4">
@@ -22,12 +24,24 @@ const TAB_DATA = [
             <span>Next.js</span>
           </div>
           <div className="flex flex-col items-center justify-between gap-2">
-            <Image src={ReactIcon} alt="react icon" height={50} />{" "}
+            <Image src={ReactIcon} alt="react icon" height={50} />{' '}
             <span>React</span>
           </div>
           <div className="flex flex-col items-center justify-between gap-2">
             <Image src={JavascriptIcon} alt="javascript icon" height={50} />
             <span>JavaScript</span>
+          </div>
+          <div className="flex flex-col items-center justify-between gap-2">
+            <Image src={NodejsIcon} alt="git icon" height={50} />
+            <span>Node.js</span>
+          </div>
+          <div className="flex flex-col items-center justify-between gap-2">
+            <Image src={JestIcon} alt="git icon" height={50} />
+            <span>Jest</span>
+          </div>
+          <div className="flex flex-col items-center justify-between gap-2">
+            <Image src={GitIcon} alt="git icon" height={50} />
+            <span>Git</span>
           </div>
           <div className="flex flex-col items-center justify-between gap-2">
             <Image src={HtmlIcon} alt="html icon" height={50} />
@@ -36,36 +50,13 @@ const TAB_DATA = [
           <div className="flex flex-col items-center justify-between gap-2">
             <Image src={CssIcon} alt="css icon" height={50} /> <span>CSS</span>
           </div>
-          <div className="flex flex-col items-center justify-between gap-2">
-            <Image src={GitIcon} alt="git icon" height={50} />
-            <span>Git</span>
-          </div>
         </li>
       </ul>
     ),
   },
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul>
-        <li>None</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Experience",
-    id: "experience",
-    content: (
-      <ul>
-        <li>Experience 1</li>
-        <li>Experience 2</li>
-      </ul>
-    ),
-  },
-];
+]
 function AboutSection() {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState('skills')
 
   // function handleTabChange(id) {
   //   startTransition(() => setTab(id));
@@ -98,7 +89,7 @@ function AboutSection() {
           <div className="flex flex-row mt-8 justify-center">
             <TabButton
               // selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
+              active={tab === 'skills'}
             >
               Skills
             </TabButton>
@@ -109,7 +100,7 @@ function AboutSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default AboutSection;
+export default AboutSection
