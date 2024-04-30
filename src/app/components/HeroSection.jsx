@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 function HeroSection() {
   return (
@@ -11,13 +11,12 @@ function HeroSection() {
           <h1 className=" text-4xl sm:text-5xl lg:text-6xl text-zinc-900 font-extrabold">
             Kevin Jarvis
           </h1>
-          <h2 className="text-xl lg:text-3xl mb-4 ">Front-End Developer</h2>
+          <h2 className="text-xl lg:text-3xl mb-4 ">Full Stack Developer</h2>
           <p className="text-base lg:text-lg mb-6">
-            I am a self-taught developer from the Philadelphia area with a
-            passion for design and the arts. Currently teaching ballroom and
-            latin dancing in Abington, PA at Socialsport Dance Club. When
-            I&apos;m not dancing or coding, you can catch me online playing
-            Street Fighter or attempting to shred on guitar.
+            I am a self-taught developer from the Philadelphia area with a passion for design and
+            the arts. Currently teaching ballroom and latin dancing in Abington, PA at Socialsport
+            Dance Club. When I&apos;m not dancing or coding, you can catch me online playing Street
+            Fighter or attempting to shred on guitar.
           </p>
           <div>
             <Link

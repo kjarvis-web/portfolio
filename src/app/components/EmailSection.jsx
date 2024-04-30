@@ -1,31 +1,31 @@
-"use client";
+'use client'
 
-import Image from "next/image";
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-import GithubIcon from "../../../public/images/github-icon.svg";
-import Linkedin from "../../../public/images/linkedin.svg";
+import Image from 'next/image'
+import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
+import GithubIcon from '../../../public/images/github-icon.svg'
+import Linkedin from '../../../public/images/linkedin.svg'
 
 function EmailSection() {
-  const form = useRef();
-  const service = process.env.NEXT_PUBLIC_SERVICE;
-  const template = process.env.NEXT_PUBLIC_TEMPLATE;
-  const key = process.env.NEXT_PUBLIC_KEY;
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const form = useRef()
+  const service = process.env.NEXT_PUBLIC_SERVICE
+  const template = process.env.NEXT_PUBLIC_TEMPLATE
+  const key = process.env.NEXT_PUBLIC_KEY
+  const [emailSubmitted, setEmailSubmitted] = useState(false)
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     emailjs.sendForm(service, template, form.current, key).then(
       (result) => {
-        console.log(result.text);
-        e.target.reset();
-        setEmailSubmitted(true);
+        console.log(result.text)
+        e.target.reset()
+        setEmailSubmitted(true)
       },
       (error) => {
-        console.log(error.text);
+        console.log(error.text)
       }
-    );
-  };
+    )
+  }
   return (
     <section id="contact" className="grid md:grid-cols-2 my-12 gap-4">
       <div>
@@ -91,7 +91,7 @@ function EmailSection() {
         )}
       </div>
     </section>
-  );
+  )
 }
 
-export default EmailSection;
+export default EmailSection

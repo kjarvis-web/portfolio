@@ -1,30 +1,31 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCard from './ProjectCard';
 
 const projectsData = [
   {
     id: 1,
-    title: "NextShopAPI",
+    title: 'Reddit Lite',
     description:
-      "A mock online store that fetches data from fakeapistore.com. Nextjs was used to bundle the project, tailwindCSS to style, and useContext to manage state.",
-    image: "/images/nextshop.jpg",
-    gitUrl: "https://github.com/norristown/nextshop",
-    previewUrl: "https://nextshop-theta.vercel.app/",
+      'Reddit clone that has some of the features associated with the website reddit such as nested comments, voting, basic user authentication (jwt), and search.',
+    image: '/images/reddit.png',
+    gitUrl: 'https://github.com/kjarvis-web/reddit_frontend',
+    previewUrl: 'https://reddit-3map.onrender.com/',
   },
   {
     id: 2,
-    title: "Project 2 title",
-    description: "Project 2 description",
-    image: "/images/computer.jpg",
-    gitUrl: "/",
-    previewUrl: "/",
+    title: 'NextShopAPI',
+    description:
+      'A mock online store that fetches data from fakeapistore.com. Nextjs was used to bundle the project, tailwindCSS to style, and useContext to manage state.',
+    image: '/images/nextshop.jpg',
+    gitUrl: 'https://github.com/kjarvis-web/nextshop',
+    previewUrl: 'https://nextshop-theta.vercel.app/',
   },
   {
     id: 3,
-    title: "Project 3 title",
-    description: "Project 3 description",
-    image: "/images/computer.jpg",
-    gitUrl: "/",
-    previewUrl: "/",
+    title: 'Project 3 title',
+    description: 'Project 3 description',
+    image: '/images/computer.jpg',
+    gitUrl: '/',
+    previewUrl: '/',
   },
 ];
 function ProjectSection() {
