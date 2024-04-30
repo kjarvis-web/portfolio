@@ -63,19 +63,15 @@ function AboutSection() {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-base md:text-lg">
-            I am a front-end web developer with experince in Javascript, React, Node.js, HTML, CSS,
-            and Git. I am a fast learner looking to expand my knowledge and skill set. I am excited
-            at the prospect of working with others to create amazing applications.
+            I am a full stack web developer with experince in Javascript, React, Node.js, HTML, CSS,
+            and Git. I am a fast learner looking to expand my knowledge and skill set.
           </p>
           <br />
           <p className="text-base md:text-lg">
             Working as a dance instructor for the past ten years has given me the opportunity to
-            work with many clients of all different backgrounds and goals which has helped me
-            improve my communication and interpersonal skills.
+            work with many clients of all different backgrounds and goals which has helped my
+            communication and interpersonal skills.
           </p>
-          <div className="flex flex-row mt-8 justify-center">
-            <h3>Skills</h3>
-          </div>
           <div className="mt-8">{TAB_DATA.map((x) => x.content)}</div>
         </div>
       </div>
