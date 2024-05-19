@@ -69,8 +69,8 @@ function AboutSection() {
           <br />
           <p className="text-base md:text-lg">
             Working as a dance instructor for the past ten years has given me the opportunity to
-            work with many clients of all different backgrounds and goals which has helped my
-            communication and interpersonal skills.
+            work with many clients of all different backgrounds and goals which has helped develop
+            my communication and interpersonal skills in dealing with people.
           </p>
           <div className="mt-8">{TAB_DATA.map((x) => x.content)}</div>
         </div>

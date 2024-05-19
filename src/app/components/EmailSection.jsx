@@ -32,11 +32,11 @@ function EmailSection() {
         <h5 className="text-3xl font-bold my-2">Contact Me</h5>
         <p className="mb-4 max-w-md">
           If you liked any of my work here (or if you didn&apos;t), please
-          contact me. I look forward to hearing from you!
+          contact me.
         </p>
         <div className="socials flex flex-row gap-6">
           <a
-            href="https://github.com/norristown"
+            href="https://github.com/kjarvis-web"
             target="_blank"
             rel="noopener noreferrer"
           >
