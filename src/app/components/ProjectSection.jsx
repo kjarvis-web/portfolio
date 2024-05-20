@@ -21,9 +21,9 @@ const projectsData = [
 ];
 function ProjectSection() {
   return (
-    <section id="projects" className="">
+    <section id="projects" className="project-section">
       <h2 className="text-center text-5xl font-bold mt-4 mb-10">My Projects</h2>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12">
         {projectsData.map((project) => (
           <ProjectCard
             key={project.id}
