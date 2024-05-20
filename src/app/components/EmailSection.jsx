@@ -1,45 +1,41 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import { useRef, useState } from 'react'
-import emailjs from '@emailjs/browser'
-import GithubIcon from '../../../public/images/github-icon.svg'
-import Linkedin from '../../../public/images/linkedin.svg'
+import Image from 'next/image';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import GithubIcon from '../../../public/images/github-icon.svg';
+import Linkedin from '../../../public/images/linkedin.svg';
 
 function EmailSection() {
-  const form = useRef()
-  const service = process.env.NEXT_PUBLIC_SERVICE
-  const template = process.env.NEXT_PUBLIC_TEMPLATE
-  const key = process.env.NEXT_PUBLIC_KEY
-  const [emailSubmitted, setEmailSubmitted] = useState(false)
+  const form = useRef();
+  const service = process.env.NEXT_PUBLIC_SERVICE;
+  const template = process.env.NEXT_PUBLIC_TEMPLATE;
+  const key = process.env.NEXT_PUBLIC_KEY;
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs.sendForm(service, template, form.current, key).then(
       (result) => {
-        console.log(result.text)
-        e.target.reset()
-        setEmailSubmitted(true)
+        console.log(result.text);
+        e.target.reset();
+        setEmailSubmitted(true);
       },
       (error) => {
-        console.log(error.text)
+        console.log(error.text);
       }
-    )
-  }
+    );
+  };
   return (
     <section id="contact" className="grid md:grid-cols-2 my-12 gap-4">
       <div>
         <h5 className="text-3xl font-bold my-2">Contact Me</h5>
-        <p className="mb-4 max-w-md">
-          If you liked any of my work here (or if you didn&apos;t), please
-          contact me.
+        <p className="mb-4">
+          Thank you for taking the time to peruse my portfolio. You can email me using the form
+          here.
         </p>
         <div className="socials flex flex-row gap-6">
-          <a
-            href="https://github.com/kjarvis-web"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/kjarvis-web" target="_blank" rel="noopener noreferrer">
             <Image src={GithubIcon} alt="github icon" height={35} />
           </a>
 
@@ -53,7 +49,7 @@ function EmailSection() {
           </p>
         ) : (
           <form className="flex flex-col" onSubmit={sendEmail} ref={form}>
-            <label htmlFor="email">Your Email</label>
+            <label htmlFor="email">Email</label>
             <input
               className="border border-zinc-900 text-sm rounded lg block w-full p-2 mb-4"
               name="email"
@@ -91,7 +87,7 @@ function EmailSection() {
         )}
       </div>
     </section>
-  )
+  );
 }
 
-export default EmailSection
+export default EmailSection;
