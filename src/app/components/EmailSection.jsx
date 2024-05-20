@@ -44,14 +44,14 @@ function EmailSection() {
       </div>
       <div>
         {emailSubmitted ? (
-          <p className="text-green-500 bg-zinc-900 p-10 rounded text-xl text-center font-semi-bold mt-2">
+          <p className="border border-zinc-800 p-10 rounded-xl text-xl text-center font-semi-bold mt-2">
             Email sent! Thank you!
           </p>
         ) : (
           <form className="flex flex-col" onSubmit={sendEmail} ref={form}>
             <label htmlFor="email">Email</label>
             <input
-              className="border border-zinc-900 text-sm rounded lg block w-full p-2 mb-4"
+              className="border border-zinc-800 text-sm rounded block w-full p-2 mb-4"
               name="email"
               type="email"
               id="email"
@@ -60,7 +60,7 @@ function EmailSection() {
             ></input>
             <label htmlFor="subject">Subject</label>
             <input
-              className="border border-zinc-900 text-sm rounded lg block w-full p-2 mb-4"
+              className="border border-zinc-800 text-sm rounded block w-full p-2 mb-4"
               type="text"
               name="subject"
               id="subject"
@@ -73,13 +73,13 @@ function EmailSection() {
               id="message"
               cols="30"
               rows="10"
-              className="border border-zinc-900 text-sm rounded lg block w-full p-2 mb-4"
+              className="border border-zinc-800 text-sm rounded block w-full p-2 mb-4"
               placeholder="Message here..."
               required
             ></textarea>
             <button
               type="submit"
-              className="text-white bg-violet-800 hover:bg-violet-900 font-medium w-full rounded p-3"
+              className="text-white bg-green-600 hover:bg-green-700 font-medium w-full rounded p-3"
             >
               Submit
             </button>
