@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 const projectsData = [
   {
     id: 1,
-    title: 'Reddit Lite',
+    title: 'Reddit Lite (Full Stack)',
     description:
       'Reddit clone that has some of the features associated with the website reddit such as nested comments, voting, basic user authentication (jwt), and search. MongoDB is used to store data, Express and node js is used to model the back end with react for the front end. Redux is used for state management and tailwind css for styling.',
     image: '/images/reddit.png',
@@ -12,20 +12,11 @@ const projectsData = [
   },
   {
     id: 2,
-    title: 'NextShopAPI',
-    description:
-      'A mock online store that fetches data from fakeapistore.com. Nextjs was used to bundle the project, tailwindCSS to style, and useContext to manage state.',
+    title: 'Discord Lite (Full Stack)',
+    description: 'Coming soon',
     image: '/images/nextshop.jpg',
-    gitUrl: 'https://github.com/kjarvis-web/nextshop',
-    previewUrl: 'https://nextshop-theta.vercel.app/',
-  },
-  {
-    id: 3,
-    title: 'Project 3 title',
-    description: 'Project 3 description',
-    image: '/images/computer.jpg',
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/kjarvis-web/discord_frontend',
+    previewUrl: 'https://github.com/kjarvis-web/discord',
   },
 ];
 function ProjectSection() {
