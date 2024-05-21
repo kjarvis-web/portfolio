@@ -13,8 +13,6 @@ import NodejsIcon from '../../../public/images/nodejs.svg';
 
 const TAB_DATA = [
   {
-    title: 'Skills',
-    id: 'skills',
     content: (
       <ul className="flex gap-8 md:gap-10 text-sm font-semibold justify-center">
         <li className="md:flex md:flex-wrap md:gap-4 md:justify-between grid grid-cols-3 gap-4">
@@ -53,26 +51,19 @@ function AboutSection() {
   return (
     <section id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image
-          className="rounded md:my-4"
-          src="/images/computer.jpg"
-          width={500}
-          height={500}
-          alt="about image"
-        />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+        <div>{TAB_DATA.map((x) => x.content)}</div>
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full gap-y-4">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-base md:text-lg">
             I am a full stack web developer with experince in Javascript, React, Node.js, HTML, CSS,
             and Git. I am a fast learner looking to expand my knowledge and skill set.
           </p>
-          <br />
+
           <p className="text-base md:text-lg">
             Working as a dance instructor for the past ten years has given me the opportunity to
             work with many clients of all different backgrounds and goals which has helped develop
             my communication and interpersonal skills in dealing with people.
           </p>
-          <div className="mt-8">{TAB_DATA.map((x) => x.content)}</div>
         </div>
       </div>
     </section>
