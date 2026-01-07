@@ -14,7 +14,7 @@ const projectsData = [
     id: 2,
     title: 'Discord Lite (Full Stack)',
     description: 'Coming soon',
-    image: '/images/nextshop.jpg',
+    image: '/images/discordlite.png',
     gitUrl: 'https://github.com/kjarvis-web/discord_frontend',
     previewUrl: 'https://github.com/kjarvis-web/discord',
   },
