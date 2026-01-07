@@ -5,7 +5,7 @@ const projectsData = [
     id: 1,
     title: 'Reddit Lite (Full Stack)',
     description:
-      'Reddit clone that has some of the features associated with the website reddit such as nested comments, voting, basic user authentication (jwt), and search. MongoDB is used to store data, Express and node js is used to model the back end with react for the front end. Redux is used for state management and tailwind css for styling.',
+      'Reddit clone that has some of the features associated with the website reddit such as nested comments, voting, basic user authentication (jwt), and search. MongoDB is used to store data, Express and node js is used to model the back end with React for the front end. Redux is used for state management and tailwind css for styling.',
     image: '/images/reddit.png',
     gitUrl: 'https://github.com/kjarvis-web/reddit_frontend',
     previewUrl: 'https://reddit-3map.onrender.com/',
@@ -13,7 +13,8 @@ const projectsData = [
   {
     id: 2,
     title: 'Discord Lite (Full Stack)',
-    description: 'Coming soon',
+    description:
+      'A simple messaging application where messages are updated in real time using socket.io.',
     image: '/images/discordlite.png',
     gitUrl: 'https://github.com/kjarvis-web/discord_frontend',
     previewUrl: 'https://github.com/kjarvis-web/discord',
