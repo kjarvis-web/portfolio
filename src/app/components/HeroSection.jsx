@@ -15,7 +15,7 @@ function HeroSection() {
           <p className="text-base lg:text-lg mb-6">
             I am a software developer from the Philadelphia area with a passion for design and the
             arts, and experience in full stack web development. I graduated with a Bachelor of
-            Science degree in Computer Science in 2025 from Western Governors University.
+            Science in Computer Science in 2025 from Western Governors University.
           </p>
           <div>
             <Link
