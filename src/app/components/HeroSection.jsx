@@ -13,10 +13,9 @@ function HeroSection() {
           </h1>
           <h2 className="text-xl lg:text-3xl mb-4 ">Full Stack Developer</h2>
           <p className="text-base lg:text-lg mb-6">
-            I am a self-taught developer from the Philadelphia area with a passion for design and
-            the arts. Currently teaching ballroom and latin dancing in Abington, PA at Socialsport
-            Dance Club. When I&apos;m not dancing or coding, you can catch me online playing Street
-            Fighter or attempting to shred on guitar.
+            I am a software developer from the Philadelphia area with a passion for design and the
+            arts, and experience in full stack web development. I graduated with a Bachelor of
+            Science degree in Computer Science in 2025 from Western Governors University.
           </p>
           <div>
             <Link
