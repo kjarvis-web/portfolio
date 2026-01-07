@@ -62,7 +62,7 @@ function AboutSection() {
           <p className="text-base md:text-lg">
             Working as a dance instructor for the past ten years has given me the opportunity to
             work with many clients of all different backgrounds and goals which has helped develop
-            my communication and interpersonal skills in dealing with people.
+            my communication and interpersonal skills.
           </p>
         </div>
       </div>
