@@ -17,7 +17,7 @@ const projectsData = [
       'A simple messaging application where messages are updated in real time using socket.io.',
     image: '/images/discordlite.png',
     gitUrl: 'https://github.com/kjarvis-web/discord_frontend',
-    previewUrl: 'https://github.com/kjarvis-web/discord',
+    previewUrl: 'https://discord-4qyw.onrender.com',
   },
 ];
 function ProjectSection() {
