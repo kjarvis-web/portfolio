@@ -37,25 +37,8 @@ const TAB_DATA = [
             <Image src={PythonIcon} alt="python icon" height={50} /> <span>Python</span>
           </div>
           <div className="flex flex-col items-center justify-between gap-2">
-            <Image src={MongoDbIcon} alt="mongodb icon" height={50} /> <span>MongoDB</span>
-          </div>
-          <div className="flex flex-col items-center justify-between gap-2">
-            <Image src={ExpressIcon} alt="express icon" height={50} /> <span>Express</span>
-          </div>
-          <div className="flex flex-col items-center justify-between gap-2">
-            <Image src={JestIcon} alt="git icon" height={50} />
-            <span>Jest</span>
-          </div>
-          <div className="flex flex-col items-center justify-between gap-2">
             <Image src={GitIcon} alt="git icon" height={50} />
             <span>Git</span>
-          </div>
-          <div className="flex flex-col items-center justify-between gap-2">
-            <Image src={HtmlIcon} alt="html icon" height={50} />
-            <span>HTML</span>
-          </div>
-          <div className="flex flex-col items-center justify-between gap-2">
-            <Image src={CssIcon} alt="css icon" height={50} /> <span>CSS</span>
           </div>
         </li>
       </ul>
