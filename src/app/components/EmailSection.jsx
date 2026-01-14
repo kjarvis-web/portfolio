@@ -38,8 +38,6 @@ function EmailSection() {
           <a href="https://github.com/kjarvis-web" target="_blank" rel="noopener noreferrer">
             <Image src={GithubIcon} alt="github icon" height={35} />
           </a>
-
-          <Image src={Linkedin} alt="linkedin icon" height={35} />
         </div>
       </div>
       <div>

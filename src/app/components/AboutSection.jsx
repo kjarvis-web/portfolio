@@ -7,9 +7,12 @@ import JavascriptIcon from '../../../public/images/javascript.svg';
 import HtmlIcon from '../../../public/images/html-5.svg';
 import CssIcon from '../../../public/images/css-3.svg';
 import GitIcon from '../../../public/images/git-icon.svg';
-
+import ExpressIcon from '../../../public/images/express.svg';
 import JestIcon from '../../../public/images/jest.svg';
 import NodejsIcon from '../../../public/images/nodejs.svg';
+import MongoDbIcon from '../../../public/images/mongodb.svg';
+import PythonIcon from '../../../public/images/python.svg';
+import JavaIcon from '../../../public/images/java.svg';
 
 const TAB_DATA = [
   {
@@ -17,15 +20,27 @@ const TAB_DATA = [
       <ul className="flex gap-8 md:gap-10 text-sm font-semibold justify-center">
         <li className="md:flex md:flex-wrap md:gap-4 md:justify-between grid grid-cols-3 gap-4">
           <div className="flex flex-col items-center justify-between gap-2">
-            <Image src={ReactIcon} alt="react icon" height={50} /> <span>React</span>
-          </div>
-          <div className="flex flex-col items-center justify-between gap-2">
             <Image src={JavascriptIcon} alt="javascript icon" height={50} />
             <span>JavaScript</span>
           </div>
           <div className="flex flex-col items-center justify-between gap-2">
+            <Image src={ReactIcon} alt="react icon" height={50} /> <span>React</span>
+          </div>
+          <div className="flex flex-col items-center justify-between gap-2">
             <Image src={NodejsIcon} alt="git icon" height={50} />
             <span>Node.js</span>
+          </div>
+          <div className="flex flex-col items-center justify-between gap-2">
+            <Image src={JavaIcon} alt="java icon" height={50} /> <span>Java</span>
+          </div>
+          <div className="flex flex-col items-center justify-between gap-2">
+            <Image src={PythonIcon} alt="python icon" height={50} /> <span>Python</span>
+          </div>
+          <div className="flex flex-col items-center justify-between gap-2">
+            <Image src={MongoDbIcon} alt="mongodb icon" height={50} /> <span>MongoDB</span>
+          </div>
+          <div className="flex flex-col items-center justify-between gap-2">
+            <Image src={ExpressIcon} alt="express icon" height={50} /> <span>Express</span>
           </div>
           <div className="flex flex-col items-center justify-between gap-2">
             <Image src={JestIcon} alt="git icon" height={50} />
@@ -55,8 +70,9 @@ function AboutSection() {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full gap-y-4">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-base md:text-lg">
-            I am a full stack web developer with experince in Javascript, React, Node.js, HTML, CSS,
-            and Git. I am a fast learner looking to expand my knowledge and skill set.
+            I am a full stack web developer with experince in JavaScript, Java, Python, React,
+            Node.js, HTML, CSS, and Git. I am a fast learner looking to expand my knowledge and
+            skill set.
           </p>
 
           <p className="text-base md:text-lg">
