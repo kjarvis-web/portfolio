@@ -24,9 +24,12 @@ function HeroSection() {
             >
               Hire Me
             </Link>
-            <button className="px-6 py-3 sm:w-fit w-full rounded-full bg-zinc-900 hover:text-black hover:bg-zinc-200 text-zinc-100 mt-3">
+            <Link
+              download="public/images/cv.pdf"
+              className="px-6 py-3 sm:w-fit w-full rounded-full bg-zinc-900 hover:text-black hover:bg-zinc-200 text-zinc-100 mt-3"
+            >
               Download CV
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 place-self-center relative w-[350px] h-[350px] lg:w-[300px] lg:h-[300px] mt-4 lg:mt-0">
