@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import GithubIcon from '../../../public/images/github-icon.svg';
-import Linkedin from '../../../public/images/linkedin.svg';
 
 function EmailSection() {
   const form = useRef();

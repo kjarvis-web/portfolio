@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import ProjectSection from './components/ProjectSection';
 import Footer from './components/Footer';
 
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-zinc-100">
