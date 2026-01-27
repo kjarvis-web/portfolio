@@ -4,13 +4,8 @@ import Image from 'next/image';
 
 import ReactIcon from '../../../public/images/react.svg';
 import JavascriptIcon from '../../../public/images/javascript.svg';
-import HtmlIcon from '../../../public/images/html-5.svg';
-import CssIcon from '../../../public/images/css-3.svg';
 import GitIcon from '../../../public/images/git-icon.svg';
-import ExpressIcon from '../../../public/images/express.svg';
-import JestIcon from '../../../public/images/jest.svg';
 import NodejsIcon from '../../../public/images/nodejs.svg';
-import MongoDbIcon from '../../../public/images/mongodb.svg';
 import PythonIcon from '../../../public/images/python.svg';
 import JavaIcon from '../../../public/images/java.svg';
 
@@ -53,15 +48,15 @@ function AboutSection() {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full gap-y-4">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-base md:text-lg">
-            I am a full stack web developer with experince in JavaScript, Java, Python, React,
+            I am a full stack web developer with experience in JavaScript, Java, Python, React,
             Node.js, HTML, CSS, and Git. I am a fast learner looking to expand my knowledge and
             skill set.
           </p>
 
           <p className="text-base md:text-lg">
-            Working as a dance instructor for the past ten years has given me the opportunity to
-            work with many clients of all different backgrounds and goals which has helped develop
-            my communication and interpersonal skills.
+            Working as a sales executive for the past ten years has given me the opportunity to work
+            with many clients of all different backgrounds and goals, which has helped develop my
+            communication and interpersonal skills.
           </p>
         </div>
       </div>
