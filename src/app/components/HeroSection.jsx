@@ -27,7 +27,7 @@ function HeroSection() {
             <a
               href="/images/cv.pdf"
               target="_blank"
-              download="cv.pdf"
+              download="resume_0.pdf"
               className="px-6 py-3 sm:w-fit w-full rounded-full bg-zinc-900 hover:text-black hover:bg-zinc-200 text-zinc-100 mt-3"
             >
               Download CV
